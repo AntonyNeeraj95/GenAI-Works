@@ -45,7 +45,7 @@ Follow these steps to set up and run the Email Drafting Agent.
 ## 🧪 1. Clone the Repository
 
 ```bash
-git clone https://github.com/AntonyNeeraj95/GenAI-Works.git
+git clone https://github.com/AntonyNeeraj95/genai-agentos.git
 cd genai-agentos/
 ```
 
@@ -90,7 +90,7 @@ Once started, access the platform at:
 ## 🔐 5. Agent JWT Configuration
 
 1. Navigate to the **Agents tab** in the frontend.
-2. Click **"Generate JWT Token"**.
+2. Click **"Generate Token"**.
 3. Copy the token and update the agent-specific `.env`:
 
 ```bash
@@ -205,17 +205,20 @@ Choose your operating system:
 
 ### 🚀 Start a Tunnel
 
-To expose your local port (e.g., `8080`), run:
+To expose your local port run:
 
 ```bash
-ngrok http 8080
+ngrok http 3000
 ```
 
-This will generate a public WebSocket URL like:
+This will generate a public WebSocket URL.
+In my scenario, the AgentOS UI is deployed in the below URL.
 
 ```
-https://abc123.ngrok.io
+https://1b27-2401-4900-8fdd-74da-9ccd-595f-85ec-e999.ngrok-free.app
 ```
+**NOTE** : The above URL lasts live until the Docker container is up.
+
 This link can be accessed by your clients or collabarators for testing purposes.
 ### 🔄 Update Configuration
 
